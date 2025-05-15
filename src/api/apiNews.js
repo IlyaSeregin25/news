@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = import.meta.env.VITE_CONFIG_API_KEY;
+const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 const Base_URL = import.meta.env.VITE_NEWS_BASE_API_URL;
 
 const datassss = {
@@ -381,7 +381,11 @@ export const getNews = async () => {
       },
     });
     return response.data; */
-    return datassss;
+    return await new Promise(resolve => {
+      setTimeout(() => {
+        resolve(datassss);
+      }, 500);
+    });
   } catch (error) {
     console.log(error);
   }

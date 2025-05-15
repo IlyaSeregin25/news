@@ -1,7 +1,7 @@
 import { formatDate } from '../../helpers/formatDate';
 import styles from './styles.module.css';
 
-const Header = p => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>News REACTIFY</h1>
