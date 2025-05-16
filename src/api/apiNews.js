@@ -373,17 +373,20 @@ const datassss = {
   page: 1,
 };
 
-export const getNews = async () => {
+export const getNews = async (page_number = 1, page_size = 10) => {
   try {
-    /* const response = await axios.get(`${Base_URL}latest-news`, {
+    /* const response = await axios.get(`${Base_URL}search`, {
       params: {
         apiKey: API_KEY,
+        page_number,
+        page_size,
       },
     });
     return response.data; */
     return await new Promise(resolve => {
       setTimeout(() => {
-        resolve(datassss);
+        let clone = structuredClone(datassss).news.splice(page_number, page_size);
+        resolve({ news: clone });
       }, 500);
     });
   } catch (error) {
