@@ -373,20 +373,100 @@ const datassss = {
   page: 1,
 };
 
-export const getNews = async (page_number = 1, page_size = 10) => {
+export const getNews = async ({ page_number = 1, page_size = 10, category }) => {
   try {
     /* const response = await axios.get(`${Base_URL}search`, {
       params: {
         apiKey: API_KEY,
         page_number,
         page_size,
+        category,
       },
     });
     return response.data; */
     return await new Promise(resolve => {
       setTimeout(() => {
-        let clone = structuredClone(datassss).news.splice(page_number, page_size);
-        resolve({ news: clone });
+        let clone = structuredClone(datassss);
+        let result;
+        if (category) {
+          result = datassss.news.filter(item => {
+            let flag = false;
+            item.category.forEach(elem => {
+              if (elem === category) flag = true;
+            });
+            if (flag) return item;
+          });
+        } else {
+          result = clone.news.splice(page_number, page_size); //[{},{}]
+        }
+        resolve({ news: result });
+      }, 500);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const categories = [
+  'regional',
+  'technology',
+  'lifestyle',
+  'business',
+  'general',
+  'programming',
+  'science',
+  'entertainment',
+  'world',
+  'sports',
+  'finance',
+  'academia',
+  'politics',
+  'health',
+  'opinion',
+  'food',
+  'game',
+  'fashion',
+  'academic',
+  'crap',
+  'travel',
+  'culture',
+  'economy',
+  'environment',
+  'art',
+  'music',
+  'notsure',
+  'CS',
+  'education',
+  'redundant',
+  'television',
+  'commodity',
+  'movie',
+  'entrepreneur',
+  'review',
+  'auto',
+  'energy',
+  'celebrity',
+  'medical',
+  'gadgets',
+  'design',
+  'EE',
+  'security',
+  'mobile',
+  'estate',
+  'funny',
+];
+
+export const getCategories = async () => {
+  try {
+    /*     const response = await axios.get(`${Base_URL}available/categories`, {
+      params: {
+        apiKey: API_KEY,
+      },
+    });
+    return response.data; */
+    return await new Promise(resolve => {
+      setTimeout(() => {
+        resolve({ categories: categories });
       }, 500);
     });
   } catch (error) {
