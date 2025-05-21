@@ -3702,6 +3702,385 @@ const datassss = {
   page: 1,
 };
 
+const dataLatestNews = {
+  status: 'ok',
+  news: [
+    {
+      id: '16df3498-3e21-467d-a1b7-48a7f3647c40',
+      title: 'Kettering Health hit by system-wide outage after ransomware attack',
+      description:
+        'Kettering Health, a healthcare network that operates 14 medical centers in Ohio, was forced to cancel inpatient and outpatient procedures following a cyberattack that caused a system-wide technology outage.',
+      url: 'https:\/\/www.bleepingcomputer.com\/news\/security\/kettering-health-hit-by-system-wide-outage-after-ransomware-attack\/',
+      author: 'Sergiu Gatlan',
+      image: 'https:\/\/www.bleepstatic.com\/content\/hl-images\/2025\/05\/21\/Kettering-Health.jpg',
+      language: 'en',
+      category: ['programming'],
+      published: '2025-05-21 11:45:08 +0000',
+    },
+    {
+      id: '1b8a3fd4-0e3b-4a72-802e-30ac3576c057',
+      title: 'Did Soccer Originate in Scotland? New Claim Draws Jeers in England.',
+      description:
+        'The discovery of a 17th-century "foot-ball" pitch in Scotland would relocate the birthplace of the modern game.',
+      url: 'https:\/\/www.nytimes.com\/2025\/05\/21\/science\/archaeology-soccer-england-scotland.html',
+      author: 'Franz Lidz',
+      image: 'None',
+      language: 'en',
+      category: ['world'],
+      published: '2025-05-21 11:37:56 +0000',
+    },
+    {
+      id: 'a5c27da7-b36b-430f-a425-d07a52fc30cc',
+      title: 'GOP Budget Would Finally Defund Planned Parenthood',
+      description:
+        'Every single dollar that flows to Planned Parenthood enables the abortion giant to expand its abortion empire.',
+      url: 'https:\/\/thefederalist.com\/2025\/05\/21\/gop-budget-would-finally-defund-democrat-mega-donor-planned-parenthood\/',
+      author: 'Zachary Mettler',
+      image: 'https:\/\/thefederalist.com\/wp-content\/uploads\/2025\/05\/ppsign.png',
+      language: 'en',
+      category: ['general'],
+      published: '2025-05-21 11:37:25 +0000',
+    },
+    {
+      id: '3ef7fb76-b4e1-4739-bbc9-614678922dba',
+      title: 'Greek opposition slams Athens for opposing EU decision to review trade ties with Israel',
+      description:
+        "\u2018Government is exposing our country internationally with its stance,\u2019 says main opposition party on Athens standing against EU move taken in light of Gaza 'catastrophe' - Anadolu Ajans\u0131",
+      url: 'https:\/\/www.aa.com.tr\/en\/europe\/greek-opposition-slams-athens-for-opposing-eu-decision-to-review-trade-ties-with-israel\/3575154',
+      author: 'https:\/\/twitter.com\/anadoluagency',
+      image:
+        'https:\/\/cdnuploads.aa.com.tr\/uploads\/Contents\/2025\/05\/21\/thumbs_b_c_09f7192bc9f83c3ef67fd2493360b317.jpg?v=143712',
+      language: 'en',
+      category: ['regional', 'europe'],
+      published: '2025-05-21 11:36:59 +0000',
+    },
+    {
+      id: 'eecafb41-cc65-4437-afec-cbb934746d5e',
+      title: "Here's Everything You Missed From Trump's Middle East Trip",
+      description:
+        "Trump's tradition-breaking Middle East visit shows he sees the Gulf Arab States as pivotal in changing the current dynamic.",
+      url: 'https:\/\/thefederalist.com\/2025\/05\/21\/heres-everything-you-missed-from-trumps-historic-trip-to-the-middle-east\/',
+      author: 'Jim Hanson',
+      image:
+        'https:\/\/thefederalist.com\/wp-content\/uploads\/2025\/05\/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-New-Twitter-Card-Template-3.png',
+      language: 'en',
+      category: ['general'],
+      published: '2025-05-21 11:36:59 +0000',
+    },
+    {
+      id: 'ab497537-d43a-4b3e-ab90-120275787b0a',
+      title: 'Congress Must Grill Biden About Whether He Was Actually POTUS',
+      description:
+        'The American people have a right to know who was actually in charge of the executive branch, with all its awesome power, for four years.',
+      url: 'https:\/\/thefederalist.com\/2025\/05\/21\/congress-needs-to-grill-joe-biden-about-whether-he-was-actually-president\/',
+      author: 'Brad Schaeffer',
+      image:
+        'https:\/\/thefederalist.com\/wp-content\/uploads\/2025\/05\/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-New-Twitter-Card-Template-21.png',
+      language: 'en',
+      category: ['general'],
+      published: '2025-05-21 11:35:43 +0000',
+    },
+    {
+      id: '2b508e6c-7d61-459e-a5c5-a3e782fb3be4',
+      title: 'TCS gets Rs 2,903 crore BSNL order for 4G rollout at 18,685 sites',
+      description:
+        'BSNL places Rs 2,903 crore APO with TCS for planning and maintenance of 4G network; Tejas Networks to supply RAN equipment worth Rs 1,525 crore',
+      url: 'https:\/\/www.business-standard.com\/industry\/news\/tcs-gets-rs-2903-cr-4g-network-order-from-bsnl-across-18685-sites-125052101178_1.html',
+      author: 'business-standard',
+      image: 'None',
+      language: 'en',
+      category: ['business'],
+      published: '2025-05-21 11:35:38 +0000',
+    },
+    {
+      id: '93c2125d-079c-45ee-9541-13d413f51415',
+      title: 'West Point Trades Real Reform For Illusory Paper Compliance',
+      description:
+        'If the academy cannot produce officers loyal to the Constitution, its leadership is not just failing, it is compromising national security.',
+      url: 'https:\/\/thefederalist.com\/2025\/05\/21\/west-point-trades-real-reform-for-illusory-paper-compliance\/',
+      author: 'Will Thibeau',
+      image: 'https:\/\/thefederalist.com\/wp-content\/uploads\/2025\/05\/meninuniform.png',
+      language: 'en',
+      category: ['general'],
+      published: '2025-05-21 11:35:36 +0000',
+    },
+    {
+      id: 'b8335217-aaa8-458e-9cc9-74c50f37d7dc',
+      title: "Biden's Cancer Diagnosis Raises Serious Questions About Who Made These 5 Decisions",
+      description:
+        "Biden's cancer diagnosis calls into question whether he was really the one behind some of the most important decisions of his presidency.",
+      url: 'https:\/\/thefederalist.com\/2025\/05\/21\/bidens-cancer-diagnosis-raises-serious-questions-about-who-made-these-5-decisions\/',
+      author: 'Brianna Lyman',
+      image:
+        'https:\/\/thefederalist.com\/wp-content\/uploads\/2025\/05\/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-New-Twitter-Card-Template-9.jpg',
+      language: 'en',
+      category: ['general'],
+      published: '2025-05-21 11:34:24 +0000',
+    },
+    {
+      id: '416771d6-ce75-4824-a3db-9c3b444c4c1b',
+      title: "Dems Said 'Democracy Is On The Ballot' While Pushing Biden",
+      description:
+        'Democrats told the American people to vote for Joe Biden, knowing full well he was incapable of running the country.',
+      url: 'https:\/\/thefederalist.com\/2025\/05\/21\/democrats-told-you-democracy-is-on-the-ballot-and-wanted-you-to-vote-for-someone-who-wasnt-even-in-charge\/',
+      author: 'Breccan F. Thies',
+      image: 'https:\/\/thefederalist.com\/wp-content\/uploads\/2025\/05\/Copy-of-New-Twitter-Card-Template-70.png',
+      language: 'en',
+      category: ['general'],
+      published: '2025-05-21 11:31:25 +0000',
+    },
+    {
+      id: '683bc313-7cc9-4466-b9c6-3aaba421d3a6',
+      title: 'Why Trump\u2019s biggest global allies aren\u2019t very happy with him',
+      description:
+        "Benjamin Netanyahu, Israel's prime minister, right, and Viktor Orb\u00e1n, Hungary's prime minister, at the Buda Castle in Budapest, Hungary, on April 3. | Akos Stiller\/Bloomberg via Getty Images\n\nIs President Donald Trump leading a vanguard of right-wing populist world leaders, working together to lay w...",
+      url: 'https:\/\/www.vox.com\/world-politics\/413676\/trump-allies-orban-netanyahu-modi',
+      author: 'Joshua Keating',
+      image:
+        'https:\/\/platform.vox.com\/wp-content\/uploads\/sites\/2\/2025\/05\/gettyimages-2207654865.jpg?quality=90&strip=all&crop=0%2C10.752607989199%2C100%2C78.494784021602&w=1200',
+      language: 'en',
+      category: ['general'],
+      published: '2025-05-21 11:30:00 +0000',
+    },
+    {
+      id: 'baa9da5b-8180-4ca3-b137-781fdef9755e',
+      title: '60% resolution plans under IBC approved in last three years: IBBI data',
+      description:
+        'IBBI data reveals 30,000 cases with defaults of Rs 13.8 trillion settled pre-admission under IBC till December 2024; creditor recovery at 32.8 per cent by March 2025',
+      url: 'https:\/\/www.business-standard.com\/industry\/news\/ibc-resolutions-rise-sharply-60-cleared-in-last-three-years-ibbi-125052101171_1.html',
+      author: 'business-standard',
+      image: 'None',
+      language: 'en',
+      category: ['business'],
+      published: '2025-05-21 11:28:26 +0000',
+    },
+    {
+      id: '4ec47b1a-eaa4-46a5-b176-471ef86b24a3',
+      title: '"That Calling Is There": Donald Trump Jr On Running For President',
+      description:
+        'US President Donald Trump\'s eldest son Donald Trump Jr said in Qatar on Wednesday that he could maybe run for president one day, adding "that calling is there."',
+      url: 'https:\/\/www.ndtv.com\/world-news\/that-calling-is-there-donald-trump-jr-on-running-for-us-president-8470360',
+      author: 'ndtv',
+      image:
+        'https:\/\/c.ndtvimg.com\/2023-11\/tf1ebcqg_donald-trump-jr_625x300_13_November_23.jpeg?im=FeatureCrop,algorithm=dnn,width=1200,height=738',
+      language: 'en',
+      category: ['world'],
+      published: '2025-05-21 11:25:19 +0000',
+    },
+    {
+      id: 'd8198718-3921-4086-b5a2-2b73076f6b20',
+      title: 'Deepening Rift Between Muhammad Yunus, Bangladesh Army Chief?',
+      description:
+        'A round of meetings in Bangladesh has once again led major differences between Bangladesh Army Chief General Waker-Uz-Zaman and Chief Adviser of the interim government Muhammad Yunus, per reports.',
+      url: 'https:\/\/www.ndtv.com\/world-news\/deepening-rift-between-muhammad-yunus-bangladesh-army-chief-8470313',
+      author: 'ndtv',
+      image:
+        'https:\/\/c.ndtvimg.com\/2025-05\/esqfhimg_bangaldesh_625x300_21_May_25.jpg?im=FitAndFill,algorithm=dnn,width=1200,height=738',
+      language: 'en',
+      category: ['world'],
+      published: '2025-05-21 11:23:39 +0000',
+    },
+    {
+      id: 'c2c405ba-b980-44ba-b183-74af8b6c5a1a',
+      title: 'DP World to invest $2.5bn in 2025 to expand global logistics footprint',
+      description: '\u2026 the Port of Posorja in Ecuador, extending the dock to 700 \u2026',
+      url: 'https:\/\/world.einnews.com\/article\/814691102\/Z5DEReL1ItoxSspC?ref=rss',
+      author: 'einnews',
+      image: 'None',
+      language: 'en',
+      category: ['national'],
+      published: '2025-05-21 11:23:11 +0000',
+    },
+    {
+      id: '213816cf-0dbf-4b40-8a41-c44f822518ba',
+      title: 'Tottenham and Man United fans clash ahead of Europa League final',
+      description:
+        'Clashes between fans of Tottenham and Manchester United have been reported ahead of the Europa League final in Spain on Wednesday. Confrontations took place in the center of Bilbao and in some nearby cities where many of the supporters were staying to avoid overpriced accommodation in the host city....',
+      url: 'https:\/\/japantoday.com\/category\/sports\/tottenham-and-man-united-fans-clash-ahead-of-europa-league-final',
+      author: 'AP',
+      image:
+        'https:\/\/media.japantoday.com\/img\/store\/30\/dd\/08f9d3855fad2aaf795c5a431a42a605d4c5\/download\/_w1700.jpeg',
+      language: 'en',
+      category: ['general'],
+      published: '2025-05-21 11:22:59 +0000',
+    },
+    {
+      id: 'f6d2f330-2681-49a4-90db-2ebb40fe40f4',
+      title: "Trump's 'Golden Dome' May Resume Arms Control Contacts: Kremlin",
+      description:
+        'The Kremlin indicated on Wednesday that President Donald Trump\'s "Golden Dome" missile shield plans could force the resumption in the foreseeable future of contacts between Moscow and Washington about nuclear arms control.',
+      url: 'https:\/\/www.ndtv.com\/world-news\/us-president-donald-trump-golden-dome-may-resume-arms-control-contacts-kremlin-8470793',
+      author: 'ndtv',
+      image:
+        'https:\/\/c.ndtvimg.com\/2025-05\/b9i5ra28_donald-trump_625x300_17_May_25.jpeg?im=FeatureCrop,algorithm=dnn,width=1200,height=738',
+      language: 'en',
+      category: ['world'],
+      published: '2025-05-21 11:21:57 +0000',
+    },
+    {
+      id: '2f230b8c-77e2-4175-b323-8afb2d740f73',
+      title: 'China, ASEAN complete CAFTA 3.0 negotiations',
+      description:
+        '\u2026 of Chinese Ministry of Commerce in Beijing, China. \/;VCG\n The building of Chinese \u2026 Ministry of Commerce in Beijing, China. \/;VCG\n China \u2026 guarantees for building a China-ASEAN mega market while supplying \u2026',
+      url: 'https:\/\/world.einnews.com\/article\/814690886\/eE-ae9zU5FurS0TI?ref=rss',
+      author: 'einnews',
+      image: 'None',
+      language: 'en',
+      category: ['national'],
+      published: '2025-05-21 11:21:49 +0000',
+    },
+    {
+      id: '30fbe2f3-22ed-4b88-a8c9-d044caf09a21',
+      title: 'Iran Executes Man Convicted In 2023 Azerbaijan Embassy Attack',
+      description:
+        "A man charged over a fatal shooting at Azerbaijan's embassy in the Iranian capital, Tehran, was executed on Wednesday, Iran's judiciary news outlet Mizan said.",
+      url: 'https:\/\/www.ndtv.com\/world-news\/iran-executes-man-convicted-in-2023-azerbaijan-embassy-attack-8469686',
+      author: 'ndtv',
+      image: 'https:\/\/c.ndtvimg.com\/2025-05\/q5otd12k_azerbaijan-embassy_625x300_21_May_25.jpeg',
+      language: 'en',
+      category: ['world'],
+      published: '2025-05-21 11:21:49 +0000',
+    },
+    {
+      id: 'de9b36ec-48c0-423a-8dd3-7333677687ae',
+      title: 'AVTL IPO to open on May 26, price band fixed at \u20b9223-235 per share',
+      description:
+        'Price band fixed at Rs 223 to 235 per share; offer to close on May 28; net proceeds to be used for debt repayment, LPG terminal acquisition and general corporate purposes',
+      url: 'https:\/\/www.business-standard.com\/markets\/ipo\/aegis-vopak-terminals-ipo-to-open-on-may-26-seeks-rs-2800-cr-125052101161_1.html',
+      author: 'business-standard',
+      image: 'None',
+      language: 'en',
+      category: ['business'],
+      published: '2025-05-21 11:21:44 +0000',
+    },
+    {
+      id: '159557a4-0a78-4351-99aa-fc23e3789018',
+      title: "'Chinese flag on the moon': Possibility pushing NASA into lunar space race",
+      description:
+        '\u2026 flew. Now with the Chinese making significant progress in human \u2026 Tech.\n Can China beat NASA to the moon?\n "The Chinese have really \u2026 I do believe that the Chinese are definitely advancing their efforts \u2026 technical abilities of the Chinese," said Platt.\n Platt also \u2026',
+      url: 'https:\/\/world.einnews.com\/article\/814690716\/q8KWSw-7MD3_4l0x?ref=rss',
+      author: 'einnews',
+      image: 'None',
+      language: 'en',
+      category: ['national'],
+      published: '2025-05-21 11:21:01 +0000',
+    },
+    {
+      id: 'a843200c-f467-4a70-98b2-4d2f0c8a2af7',
+      title: '4 Ex-Military Friends Scale Mount Everest, Used This Gas To Climb Faster',
+      description:
+        'A British team of veteran ex-special forces soldiers summited Everest on Wednesday, expedition organisers said, in a bid to fly from London, climb the highest peak and return home within seven days.',
+      url: 'https:\/\/www.ndtv.com\/world-news\/4-ex-military-friends-scale-mount-everest-used-this-gas-to-climb-faster-8469974',
+      author: 'ndtv',
+      image: 'https:\/\/c.ndtvimg.com\/2025-05\/s2e2n98_british-climbers_625x300_21_May_25.jpeg',
+      language: 'en',
+      category: ['world'],
+      published: '2025-05-21 11:19:59 +0000',
+    },
+    {
+      id: '87b626af-d2c6-45e5-9c2c-60f007d5169d',
+      title: 'First Look at the Xiaomi 16: Design and Features Revealed',
+      description:
+        'Xiaomi 16 will launch in September with Snapdragon 8 Elite 2, a 6,800mAh battery, and upgraded design and camera.',
+      url: 'https:\/\/www.gizchina.com\/2025\/05\/21\/first-look-at-the-xiaomi-16-design-and-features-revealed\/',
+      author: 'Abdullah Mustapha',
+      image: 'https:\/\/www.gizchina.com\/wp-content\/uploads\/images\/2025\/05\/xiaomi-16-2.jpg',
+      language: 'en',
+      category: ['technology'],
+      published: '2025-05-21 11:16:27 +0000',
+    },
+    {
+      id: '359678c5-de26-47fa-9fdb-106ac3549938',
+      title:
+        'Giorgi Vashadze: I express my full support to the German Ambassador, Peter Fischer - the attack against him in Batumi is a shameful, unacceptable and anti-Georgian act',
+      description:
+        'I express my full support to the German Ambassador, Peter Fischer. The attack against him in Batumi is a shameful, unacceptable and anti-Georgian act, - the leader of the Strategy Builder, Giorgi Vashadze, writes on social media.\n According to him, this was \u2026',
+      url: 'https:\/\/world.einnews.com\/article\/814688926\/5vx166EvGA3cc4ST?ref=rss',
+      author: 'einnews',
+      image: 'None',
+      language: 'en',
+      category: ['national'],
+      published: '2025-05-21 11:13:59 +0000',
+    },
+    {
+      id: 'a8ba1411-dac5-4e46-a2d9-2bc798ad6aaf',
+      title:
+        'Zahid reaffirms govt support for Bumiputera empowerment, follow-up talks with stakeholders set for Friday',
+      description:
+        'KUALA LUMPUR, May 21 \u2014 The government remains firmly committed to supporting and strengthening policies and initiatives aligned with Bumiputera economic aspirations, to ensure...',
+      url: 'https:\/\/www.malaymail.com\/news\/malaysia\/2025\/05\/21\/zahid-reaffirms-govt-support-for-bumiputera-empowerment-follow-up-talks-with-stakeholders-set-for-friday\/177647',
+      author: 'Malay Mail',
+      image: 'https:\/\/www.malaymail.com\/malaymail\/uploads\/images\/2025\/05\/21\/278223.JPG',
+      language: 'en',
+      category: ['general', 'regional'],
+      published: '2025-05-21 11:12:37 +0000',
+    },
+    {
+      id: 'aa094004-6ae6-4302-8eec-30c6792fd03f',
+      title: 'This solar GPS tracker has exceptional location accuracy, plus an infinite battery life',
+      description:
+        "Impressive battery life, broad GNSS support, and an affordable price make Garmin's eTrex Solar a top-notch GPS tracker.",
+      url: 'https:\/\/www.zdnet.com\/article\/this-solar-gps-tracker-has-exceptional-location-accuracy-plus-an-infinite-battery-life\/',
+      author: '@ZDNET',
+      image:
+        'https:\/\/www.zdnet.com\/a\/img\/resize\/f1850b9eab9a1b8269edb8b78380c77a72ebdb7f\/2024\/02\/11\/effa4d58-572b-4dd8-bc04-3712c02737f5\/garmin-etrex-solar3.jpg?auto=webp&fit=crop&height=675&width=1200',
+      language: 'en',
+      category: ['technology'],
+      published: '2025-05-21 11:10:14 +0000',
+    },
+    {
+      id: '9f7379dd-b744-42df-8d2a-cf823f91127a',
+      title: 'IndiGo Q4 results: Net profit soars 62% to \u20b93,067 crore, dividend declared',
+      description:
+        "IndiGo Q4 FY25 result: Interglobe Aviation's board has recommended a dividend of \u20b910 per equity share...",
+      url: 'https:\/\/www.business-standard.com\/companies\/quarterly-results\/indigo-q4-result-fy25-interglobe-aviation-profit-share-dividend-125052101134_1.html',
+      author: 'business-standard',
+      image: 'None',
+      language: 'en',
+      category: ['business', 'entrepreneur', 'finance'],
+      published: '2025-05-21 11:09:48 +0000',
+    },
+    {
+      id: '8f7418ce-1df8-4ae9-af10-013fb8b3ad7a',
+      title: 'Isaiah Hartenstein vying to become second German to win NBA title',
+      description:
+        '\u2026 Herbert, the man who guided Germany to those successes, had \u2026 Germany came in 2018.\n However, in an April interview with the German \u2026 the United States. He chose Germany \u2013 the country where he \u2026 town of Quakenbr\u00fcck in northern Germany, after his father Florian, \u2026',
+      url: 'https:\/\/world.einnews.com\/article\/814687256\/tw8OzDRh0hh1VWIu?ref=rss',
+      author: 'einnews',
+      image: 'None',
+      language: 'en',
+      category: ['national'],
+      published: '2025-05-21 11:07:36 +0000',
+    },
+    {
+      id: 'b74d3d6c-6e38-4406-bdf3-66624e74c438',
+      title: 'If You Must Buy A Mag7 Company, Choose Google (NASDAQ:GOOG)',
+      description: "Discover why Alphabet's stock is a cautious 'Buy' for long-term investors.",
+      url: 'https:\/\/seekingalpha.com\/article\/4788770-if-you-must-buy-a-mag7-company-choose-google?source=feed_symbol_GOOG',
+      author: 'Daniel Sch\u00f6nberger',
+      image:
+        'https:\/\/static.seekingalpha.com\/cdn\/s3\/uploads\/getty_images\/2195892457\/image_2195892457.jpg?io=getty-c-w1536',
+      language: 'en',
+      category: ['business', 'finance'],
+      published: '2025-05-21 11:07:10 +0000',
+    },
+    {
+      id: '9ab6466a-01aa-4675-a901-9e55e105e1bb',
+      title: 'How pro-Europe, pro-US Poland offers the EU a model for how to handle Trump',
+      description:
+        'As the EU crafts responses to Washington\u2019s agendas on defence and trade, it might look to Warsaw for inspiration.',
+      url: 'https:\/\/theconversation.com\/how-pro-europe-pro-us-poland-offers-the-eu-a-model-for-how-to-handle-trump-256137',
+      author: 'Ma\u0142gorzata Zachara-Szyma\u0144ska',
+      image:
+        'https:\/\/images.theconversation.com\/files\/668417\/original\/file-20250516-62-3qfwqw.jpg?ixlib=rb-4.1.0&rect=0%2C447%2C5363%2C2681&q=45&auto=format&w=1356&h=668&fit=crop',
+      language: 'en',
+      category: ['regional', 'warsaw'],
+      published: '2025-05-21 11:06:39 +0000',
+    },
+  ],
+  page: 1,
+};
+
 export const getNews = async ({ page_number = 1, page_size = 10, category, keywords }) => {
   try {
     /* const response = await axios.get(`${Base_URL}search`, {
@@ -3792,6 +4171,24 @@ const categories = [
   'estate',
   'funny',
 ];
+
+export const getLatestNews = async () => {
+  try {
+    /*     const response = await axios.get(`${Base_URL}latest-news`, {
+      params: {
+        apiKey: API_KEY,
+      },
+    });
+    return response.data; */
+    return await new Promise(resolve => {
+      setTimeout(() => {
+        resolve({ news: dataLatestNews.news });
+      }, 500);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 export const getCategories = async () => {
   try {
