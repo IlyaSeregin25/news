@@ -1,4 +1,5 @@
 import axios from 'axios';
+import type { CategoriesApiResponse, NewsApiResponse, ParamsType } from '../interfaces';
 
 const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 const Base_URL = import.meta.env.VITE_NEWS_BASE_API_URL;
@@ -4081,9 +4082,10 @@ const dataLatestNews = {
   page: 1,
 };
 
-export const getNews = async ({ page_number = 1, page_size = 10, category, keywords }) => {
+export const getNews = async (params?: ParamsType): Promise<NewsApiResponse> => {
   try {
-    /* const response = await axios.get(`${Base_URL}search`, {
+    const { page_number = 1, page_size = 10, category, keywords } = params || {};
+    /* const response = await axios.get<NewsApiResponse>(`${Base_URL}search`, {
       params: {
         apiKey: API_KEY,
         page_number,
@@ -4120,6 +4122,7 @@ export const getNews = async ({ page_number = 1, page_size = 10, category, keywo
     });
   } catch (error) {
     console.log(error);
+    return { news: [], page: 1, status: 'error' };
   }
 };
 
@@ -4172,9 +4175,9 @@ const categories = [
   'funny',
 ];
 
-export const getLatestNews = async () => {
+export const getLatestNews = async (): Promise<NewsApiResponse> => {
   try {
-    /*     const response = await axios.get(`${Base_URL}latest-news`, {
+    /*     const response = await axios.get<NewsApiResponse>(`${Base_URL}latest-news`, {
       params: {
         apiKey: API_KEY,
       },
@@ -4187,12 +4190,13 @@ export const getLatestNews = async () => {
     });
   } catch (error) {
     console.log(error);
+    return { news: [], page: 1, status: 'error' };
   }
 };
 
-export const getCategories = async () => {
+export const getCategories = async (): Promise<CategoriesApiResponse> => {
   try {
-    /*     const response = await axios.get(`${Base_URL}available/categories`, {
+    /*     const response = await axios.get<CategoriesApiResponse>(`${Base_URL}available/categories`, {
       params: {
         apiKey: API_KEY,
       },
@@ -4205,5 +4209,6 @@ export const getCategories = async () => {
     });
   } catch (error) {
     console.log(error);
+    return { news: [], description: '', status: 'error' };
   }
 };
