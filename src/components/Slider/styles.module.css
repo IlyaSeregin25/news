@@ -9,3 +9,13 @@
   background-color: white;
   cursor: pointer;
 }
+
+.slider.dark .arrow {
+  background-color: #1b1a1a;
+  color: white;
+}
+
+.slider.light .arrow {
+  background-color: #f5f4f4;
+  color: black;
+}

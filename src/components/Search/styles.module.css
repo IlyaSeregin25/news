@@ -10,3 +10,9 @@
   border: 1px solid rgb(105, 34, 34);
   border-radius: 12px;
 }
+.dark {
+  background-color: #1b1a1a;
+}
+.light {
+  background-color: #f5f4f4;
+}
