@@ -1,42 +1,34 @@
-import { getNews } from '../../api/apiNews';
-import { PAGE_SIZE, TOTAL_PAGES } from '../../constant/constant';
+import { TOTAL_PAGES } from '../../constant/constant';
 import { useDebounce } from '../../helpers/hooks/hooks';
-import { useFetch } from '../../helpers/hooks/useFetch';
-import { useFilters } from '../../helpers/hooks/useFilters';
-import type { NewsApiResponse, ParamsType } from '../../interfaces';
+import { useAppDispatch, useAppSelector } from '../../store';
+import { useGetNewsQuery } from '../../store/services/newsApi';
+import { setFilters } from '../../store/slices/newsSlice';
 import NewsFilters from '../NewsFilters/NewsFilters';
 import NewsList from '../NewsList/NewsList';
 import PaginationWrapper from '../PaginationWrapper/PaginationWrapper';
 import styles from './styles.module.css';
 
 const NewsByFilters = () => {
-  const { filters, chancgeFilter } = useFilters({
-    page_number: 1,
-    page_size: PAGE_SIZE,
-    category: null,
-    keywords: '',
-  });
+  const dispatch = useAppDispatch();
+  const filters = useAppSelector(state => state.news.filters);
 
   const debounceKeywords = useDebounce(filters.keywords, 500);
 
-  //const { data, isLoading, error } = useFetch(getNews, {
-  const { data, isLoading } = useFetch<NewsApiResponse, ParamsType>(getNews, {
-    ...filters,
-    keywords: debounceKeywords,
-  });
+  const { data, error, isLoading } = useGetNewsQuery({ ...filters, keywords: debounceKeywords });
+
   const handleNextPage = () => {
-    if (filters.page_number < TOTAL_PAGES) chancgeFilter('page_number', filters.page_number + 1);
+    if (filters.page_number < TOTAL_PAGES) dispatch(setFilters({ key: 'page_number', value: filters.page_number + 1 }));
   };
   const handlePreviousPage = () => {
-    if (filters.page_number > 1) chancgeFilter('page_number', filters.page_number - 1);
+    if (filters.page_number > 1) dispatch(setFilters({ key: 'page_number', value: filters.page_number - 1 }));
   };
   const handlePageClick = (pageNumber: number) => {
-    chancgeFilter('page_number', pageNumber);
+    dispatch(setFilters({ key: 'page_number', value: pageNumber }));
   };
 
   return (
     <section className={styles.section}>
-      <NewsFilters filters={filters} chancgeFilter={chancgeFilter} />
+      <NewsFilters filters={filters} />
       <PaginationWrapper
         top
         bottom
