@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  width: 100%;
+  padding: 12px 24px;
+  border-bottom: 1px solid gray;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  font-size: 28px;
+}
+.date {
+  font-size: 16px;
+}
+.dark {
+  background-color: #1b1a1a;
+}
+.light {
+  background-color: #f5f4f4;
+}
